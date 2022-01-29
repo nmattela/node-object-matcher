@@ -19,10 +19,10 @@ without knowing to which specific class it belongs,
 other than the fact that it is some instance of class `Person`,
 you might write something like this:
 ```javascript
-switch (person.constructor.name) {
-    case "Person": break;
-    case "Student": break;
-    case "Professor": break;
+switch (person.constructor) {
+    case Person: break;
+    case Student: break;
+    case Professor: break;
 }
 ```
 
@@ -56,9 +56,9 @@ class PhDStudent extends Student {}
 const person = new PhDStudent()
 
 person.match({
-    "PersonWithMatcher": (p: Person) => "Case when person",
-    "Professor": (p: Professor) => "Case when professor",
-    "Student": (s: Student) => "Case when student, will also fire if person is a PhD student",
+    PersonWithMatcher: (p: Person) => "Case when person",
+    Professor: (p: Professor) => "Case when professor",
+    Student: (s: Student) => "Case when student, will also fire if person is a PhD student",
     "default": (d: Person) => "In case no branch exists that matches person"
 })
 ```

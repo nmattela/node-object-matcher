@@ -18,9 +18,9 @@ function main() {
     const person = new Student()
 
     const hello = person.match({
-        "PersonBase": (p) => "I am just a normal person",
-        "Student": (s) => "I am a student",
-        "Professor": (p) => "I am a professor",
+        PersonBase: (p) => "I am just a normal person",
+        Student: (s) => "I am a student",
+        Professor: (p) => "I am a professor",
         "default": (a) => "In case things go wrong"
     })
 
