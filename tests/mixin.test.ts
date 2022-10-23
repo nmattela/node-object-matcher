@@ -1,5 +1,5 @@
 import {describe, expect, test} from '@jest/globals';
-import match, { WithMatcher } from "../src";
+import { WithMatcher } from "../src";
 
 class PersonBase {
 

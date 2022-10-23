@@ -1,4 +1,9 @@
-# Pattern matcher for class instances in JavaScript and TypeScript
+# Node Object Matcher
+
+Pattern matcher for class instances in JavaScript and TypeScript
+
+## Installation
+`yarn add node-object-matcher`
 
 ## What this library aims to fix
 Say, you have some classes that extend another class you created

@@ -6,7 +6,7 @@ interface Cases<T> {
     default: (object: any) => T
 }
 
-export default function match<M, C>(toMatch: M, cases: Cases<C>) {
+export function match<M, C>(toMatch: M, cases: Cases<C>) {
     let prototype = Object.getPrototypeOf(toMatch)
     while(prototype !== null) {
         const possibleCase = cases[prototype.constructor.name]

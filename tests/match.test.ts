@@ -1,5 +1,5 @@
 import {describe, expect, test} from '@jest/globals';
-import match from "../src";
+import { match } from "../src";
 
 class Person {
 
