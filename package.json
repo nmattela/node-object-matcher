@@ -1,6 +1,6 @@
 {
   "name": "node-object-matcher",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "dist/index.js",
   "repository": "git@github.com:nmattela/node-object-matcher.git",
   "author": "nmattela <nmattela@infogroep.be>",
