@@ -35,14 +35,14 @@ class PhDStudent extends Student {}
 
 const person = new PhDStudent()
 ```
-Then we would expect the PhD student to match with the `case "Student"`.
+Then we would expect the PhD student to match with the `case "Student"`, since `PhDStudent` extends `Student`.
 However, it does not, as the direct class of the PhD student is `PhDStudent`,
 not `Student`.
 
 This is where this pattern match library comes into play.
-It provides you with a mixin `WithMatcher` that you can apply to the root class
-(in this case `Person`)
-which works similarly to the switch statement, except that it allows you to
+It provides you with a function `match`, and a mixin `WithMatcher` that you can apply to the root class
+(in this case `Person`).
+Match works similarly to the switch statement, except that it allows you to
 match deeper:
 ```typescript
 
